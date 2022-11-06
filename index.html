@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Kolker+Brush&display=swap" rel="stylesheet">
+    <style>
+    .Ques{
+        font-size: 30px;
+    }
+
+    .button{
+       background-color: aqua;
+       color: blue;
+       border-radius: 12px;
+       border: none;
+       width: 100px;
+       height: 30px;
+       font-size: 15px;
+    }
+
+    .para{
+        font-family: 'Kolker Brush', cursive;
+       font-size: 30px;
+    }
+
+    .transition{
+        background-color: aqua;
+        width: 100px;
+        height: 100px;
+        transition: width 2s, height 3s;
+    }
+
+    .transition:hover{
+        width: 200px;
+        height: 200px;
+     }
+    .circle{
+        background-color: blueviolet;
+        border-radius: 1500px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .box-container{
+         display: grid;
+         grid-template-columns: auto auto auto;
+         /* width: 100px; */
+        margin: 20px;
+        
+    }
+
+    .box-item{
+        background-color: red;
+        width: 150px;
+        height: 150px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .box-container{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .box-item{
+            width: 100%;
+            margin: 15px;
+        }
+        
+    }
+
+    .animation{
+        background-color: aquamarine;
+        width: 100px;
+        height: 100px;
+        animation: animation-1 4s infinite;
+        position: relative;
+    }
+
+    @keyframes animation-1 {
+        0%{
+            left: 0px;
+            top: 0px;
+        }
+        25%{
+            left: 200px;
+            top: 0px;
+        }
+        50%{
+            left: 200px;
+            top: 200px;
+        }
+        75%{
+            left: 0px;
+            top: 200px;
+        }
+        100%{
+            left: 0px;
+            top: 0px;
+        }
+    }
+    }
+    }
+    
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="Ques">* Replicate the button of prepbytes.</div><br>
+    <button class="button">
+        Prepbytes
+    </button><br>
+
+    <div class="Ques">* Write a text and add any google font.</div>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis quasi doloribus ratione ut illum, quod ducimus obcaecati incidunt porro illo similique officia, 
+        ex recusandae quos libero quo perferendis natus.</p><br>
+
+    <div class="Ques">* Create a box and increase its width on hover, add transition on hover.</div><br>
+     <div class="transition"></div>
+
+     <div class="Ques">* Create a circle using border radius</div>
+     <div class="circle"></div><br>
+
+     <div class="Ques">
+        * Write code to show implementation of media queries. </div><br>
+    <div class="box-container">
+        <div class="box-item">Box 1</div>
+        <div class="box-item">Box 2</div>
+        <div class="box-item">Box 3</div>
+
+    </div>
+
+    <div class="Ques">* Write code to show any animation example.</div>
+    <div class="animation"></div>
+
+</body>
+</html>
